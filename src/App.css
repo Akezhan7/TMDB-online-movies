@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
+@import '~antd/dist/antd.css';
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800&display=swap");
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #032055;
+  color: #ffffff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+::-webkit-scrollbar {
+  width: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: white;
+  border-radius: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 5px;
+}
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+  left: 10px;
+  right: auto;
+  background: white !important;
+  border-radius: 50% !important;
+  width: 40px !important;
+  height: 40px !important;
+}
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+  right: 10px;
+  left: auto;
+  background: white !important;
+  border-radius: 50% !important;
+  width: 40px !important;
+  height: 40px !important;
+}
+.swiper-button-next:after, .swiper-button-prev:after {
+  font-size: 25px !important;
+  color: #032055 !important;
+}
+.swiper-button-next:after, .swiper-button-next:after {
+  font-size: 25px !important;
+  color: #032055 !important;
+}
+.swiper-slide {
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.home-wrapper {
+  display: grid;
+  grid-template-columns: minmax(320px, 1200px);
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding-top: 100px;
+  position: relative;
+  background-attachment: fixed;
+}
+.page-search-wrapper {
+  display: grid;
+  grid-template-columns: minmax(320px, 1200px);
+  justify-content: center;
+  padding-top: 120px;
+}
+.title-search-pages {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.container {
+  display: grid;
+  grid-template-columns: minmax(320px, 1200px);
+  justify-content: center;
+}
+.ant-tabs-tab {
   color: white;
+  font-size: 20px;
+  text-transform: uppercase;
 }
-
-.App-link {
-  color: #61dafb;
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #31d7a9;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ant-tabs-ink-bar {
+  background: #31d7a9;
 }

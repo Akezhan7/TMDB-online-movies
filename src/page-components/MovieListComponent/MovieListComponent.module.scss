@@ -1,0 +1,13 @@
+.wrapper {
+    padding-top: 200px;
+    position: relative;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    // height: 100vh;
+}
+.contWrap {
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+    gap: 50px;
+}

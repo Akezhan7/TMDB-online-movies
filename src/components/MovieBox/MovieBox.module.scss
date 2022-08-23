@@ -1,0 +1,75 @@
+.box {
+    height: 100%;
+    transition: all 0.9s;
+    
+    &:hover {
+        .boxContainer {
+            background-position: center;
+            background-size:120% 120%;
+        }
+        .play {
+            opacity: 1;
+        }
+    }
+}
+.play {
+    position: absolute;
+    top: 42%;
+    left: 45%;
+    opacity: 0;
+    transition: 0.5s;
+    svg {
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        transition: 0.3s;
+        &:hover {
+            fill: #31d7a9;
+        }
+    }
+}
+.average {
+    background-image: -webkit-linear-gradient(45deg, #f54646 0%, #f53da1 100%);
+    width: 50px;
+    padding: 10px 10px;
+    font-size: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+}
+.texts {
+    margin-top: 80%;
+    margin-bottom: 5%;
+    padding: 0 20px;
+    .textsTitle {
+        font-size: 20px;
+        font-weight: 700;
+    }
+}
+.date {
+    margin-top: 10px;
+    .dateTitle {
+        font-size: 17px;
+        font-weight: 700;
+    }
+    .dateCount {
+        font-size: 14px;
+        font-weight: 600;
+    }
+}
+
+
+.boxContainer {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    height: 100%;
+    transition: all 0.5s;
+    -webkit-box-shadow: 0px -200px 100px 0px rgba(0, 0, 0, 0.89) inset;
+    -moz-box-shadow: 0px -200px 100px 0px rgba(0, 0, 0, 0.89) inset;
+    box-shadow: 0px -200px 100px 0px rgba(0, 0, 0, 0.89) inset;
+}
+.boxSecond {
+    // transition: all 0.2s;
+    position: relative;
+    height: 100%;
+}

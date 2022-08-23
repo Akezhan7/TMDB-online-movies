@@ -1,0 +1,113 @@
+.container {
+    display: grid;
+    grid-template-columns: minmax(320px, 1200px);
+    justify-content: center;
+}
+.banner {
+    width: 100%;
+    height: 450px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 26px 200px 400px 0px rgba(0,0,0,0.79) inset;
+    -webkit-box-shadow: 26px 200px 400px 0px rgba(0,0,0,0.79) inset;
+    -moz-box-shadow: 26px 200px 400px 0px rgba(0,0,0,0.79) inset;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    svg {
+        width: 60px;
+        height: 60px;
+        cursor: pointer;
+        transition: 0.5s;
+        &:hover {
+            transform: rotate(360deg) scale(0.9);
+            fill: #31d7a9;
+        }
+    }
+}
+.book {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    width: 230px;
+    background-image: -webkit-linear-gradient(169deg, #5560ff 17%, #aa52a1 63%, #ff4343 100%);
+    padding: 10px 10px;
+    font-weight: 600;
+    border-radius: 25px;
+    transition: 0.3s;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+        transform: scale(1.1);
+    }
+    svg {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+}
+.info {
+    display: flex;
+    align-items: flex-start;
+    background: #001232;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    .infoImg {
+        margin-top: -200px;
+        
+        img {
+            border-radius: 20px;
+            width: 300px;
+            height: 400px;
+        }
+    }
+    .infoText{
+        padding: 20px;
+    }
+    .infoTitle {
+        font-size: 30px;
+        font-weight: 700;
+    }
+}
+.detailsWrap {
+    display: flex;
+    .detailsItem {
+        margin-right: 15px;
+        svg {
+            width: 19px;
+            height: 19px;
+            margin-right: 5px;
+            fill: #31d7a9;
+        }
+        span {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+.company {
+    margin-top: 10px;
+    img {
+        width: auto;
+        height: 40px;
+        margin-right: 10px;
+    }
+}
+.description {
+    margin-top: 30px;
+    font-size: 18px;
+    // font-weight: 700;
+    .descriptionTitle {
+        font-size: 33px;
+        text-transform: uppercase;
+        // border-bottom: 1px solid silver;
+        // margin-bottom: 10px;
+    }
+}
